@@ -122,10 +122,10 @@ function App(props) {
   return (
     <>
       <Navbar />
-      <div className="bg-orange-200 py-5">
+      <div className="bg-orange-200 py-9 h-full">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="bg-orange-300 flex items-center justify-center px-4 mt-4 sm:px-0 gap-16 border-8 border-neutral-700 py-8 shadow-2xl">
-            <img src={selectedImage} ref={domEl} style={getImageStyle()} alt="To be edited" width={'60%'} className="border-8 border-neutral-800" />
+          <div className="bg-orange-300 flex flex-col sm:flex-col lg:flex-row items-center justify-center px-4 mt-4 sm:px-0 gap-16 border-8 border-neutral-700 py-8 shadow-2xl">
+            <img src={selectedImage} ref={domEl} style={getImageStyle()} alt="To be edited" className='bg-contain w-auto h-96'/>
             <div className="flex flex-col gap-4 items-center justify-center">
               <div className="flex items-center justify-center">
                 <Slider
